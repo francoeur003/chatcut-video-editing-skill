@@ -1,0 +1,13 @@
+interface:
+  display_name: "ChatCut 视频剪辑"
+  short_description: "用 ChatCut 完成可编辑口播剪辑、字幕、特效与导出"
+  default_prompt: "Use $chatcut-video-editing to turn local video clips into an editable ChatCut cut with tightened pauses, captions, light effects, verification, and export when requested."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "chatcut"
+      description: "ChatCut project, timeline, caption, effect, verification, and export tools"
+
+policy:
+  allow_implicit_invocation: true
